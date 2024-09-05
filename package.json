@@ -44,8 +44,7 @@
     "lint-staged": "^15.2.10",
     "simple-git-hooks": "^2.11.1",
     "tsup": "^8.2.4",
-    "typescript": "^5.5.4",
-    "unbuild": "^2.0.0"
+    "typescript": "^5.5.4"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpx lint-staged"
