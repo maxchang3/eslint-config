@@ -39,12 +39,6 @@ export function maxchang(
             },
         })
 
-        .override('antfu/unicorn/rules', {
-            rules: {
-                'unicorn/consistent-function-scoping': 'off',
-            },
-        })
-
         .override('antfu/typescript/rules', {
             rules: {
                 'ts/explicit-function-return-type': 'off',
