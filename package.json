@@ -29,7 +29,8 @@
     "lint": "eslint --flag unstable_ts_config .",
     "lint:fix": "eslint --flag unstable_ts_config --fix .",
     "release": "bumpp && pnpm publish",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks"
   },
   "dependencies": {
     "@antfu/eslint-config": "^3.2.2"
@@ -40,8 +41,16 @@
     "eslint": "^9.9.1",
     "eslint-plugin-format": "^0.1.2",
     "jiti": "^1.21.6",
+    "lint-staged": "^15.2.10",
+    "simple-git-hooks": "^2.11.1",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
     "unbuild": "^2.0.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --flag unstable_ts_config --fix"
   }
 }
