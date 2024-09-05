@@ -4,8 +4,8 @@ type Options = Parameters<typeof antfu>[0]
 type UserConfigs = Parameters<typeof antfu>[1][]
 
 const defaultOptions: Options = {
-    markdown: false,
     yaml: false,
+    markdown: true,
     stylistic: {
         indent: 4,
     },
@@ -13,6 +13,7 @@ const defaultOptions: Options = {
     formatters: {
         html: true,
         css: true,
+        markdown: true,
     },
 }
 
