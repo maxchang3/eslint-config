@@ -1,0 +1,46 @@
+{
+  "name": "@maxchang/eslint-config",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.9.0",
+  "description": "Max Chang's ESLint config",
+  "author": "Max Chang <maxcfoo@gmail.com> (https://github.com/maxchang3/)",
+  "license": "MIT",
+  "homepage": "https://github.com/maxchang3/eslint-config",
+  "keywords": [
+    "eslint-config"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup --format esm,cjs --clean --dts",
+    "stub": "tsup --format esm",
+    "dev": "pnpx @eslint/config-inspector --config eslint.config.ts",
+    "watch": "tsup --format esm,cjs --watch",
+    "lint": "eslint --flag unstable_ts_config .",
+    "lint:fix": "eslint --flag unstable_ts_config --fix .",
+    "release": "bumpp && pnpm publish",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "bumpp": "^9.5.2",
+    "eslint": "^9.9.1",
+    "jiti": "^1.21.6",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "unbuild": "^2.0.0"
+  }
+}

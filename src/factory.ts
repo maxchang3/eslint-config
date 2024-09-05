@@ -1,0 +1,61 @@
+import antfu from '@antfu/eslint-config'
+
+type Options = Parameters<typeof antfu>[0]
+type UserConfigs = Parameters<typeof antfu>[1][]
+
+const defaultOptions: Options = {
+    markdown: false,
+    yaml: false,
+    stylistic: {
+        indent: 4,
+    },
+    lessOpinionated: true,
+    formatters: {
+        html: true,
+        css: true,
+    },
+}
+
+export function maxchang(
+    options?: Options,
+    ...userConfigs: UserConfigs
+): ReturnType<typeof antfu> {
+    const withDefaults = { ...defaultOptions, ...options }
+
+    const factory = antfu(withDefaults, ...userConfigs)
+
+        .override('antfu/javascript/rules', {
+            rules: {
+                'curly': 'off',
+                'no-console': 'off',
+            },
+        })
+
+        .override('antfu/stylistic/rules', {
+            rules: {
+                'style/arrow-parens': 'off',
+                'style/max-statements-per-line': 'off',
+                'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
+            },
+        })
+
+        .override('antfu/unicorn/rules', {
+            rules: {
+                'unicorn/consistent-function-scoping': 'off',
+            },
+        })
+
+        .override('antfu/typescript/rules', {
+            rules: {
+                'ts/explicit-function-return-type': 'off',
+            },
+        })
+
+        .override('antfu/jsonc/rules', {
+            rules: {
+                'jsonc/indent': ['error', 2],
+            },
+        })
+
+    return factory
+}

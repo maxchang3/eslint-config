@@ -1,0 +1,19 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Prepare the environment
+        uses: ./.github/actions/env
+
+      - run: pnpx changelogithub
+        env:
+          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
