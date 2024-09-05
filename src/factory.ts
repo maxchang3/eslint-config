@@ -9,12 +9,12 @@ const defaultOptions: Options = {
     stylistic: {
         indent: 4,
     },
-    lessOpinionated: true,
     formatters: {
         html: true,
         css: true,
         markdown: true,
     },
+    lessOpinionated: true,
 }
 
 export function maxchang(
