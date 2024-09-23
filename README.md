@@ -16,9 +16,9 @@ Create eslint.config.mjs in your project root:
 
 ```js
 // eslint.config.mjs
-import antfu from '@antfu/eslint-config'
+import defineConfig from '@maxchang/eslint-config'
 
-export default antfu()
+export default defineConfig()
 ```
 
 ## Convention
