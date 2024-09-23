@@ -51,6 +51,11 @@ export function maxchang(
         .override('antfu/jsonc/rules', {
             rules: {
                 'jsonc/indent': ['error', 2],
+            },
+        })
+
+        .override('antfu/jsdoc/rules', {
+            rules: {
                 'jsdoc/require-returns-description': 'off',
             },
         })
