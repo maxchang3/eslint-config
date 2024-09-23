@@ -43,12 +43,14 @@ export function maxchang(
         .override('antfu/typescript/rules', {
             rules: {
                 'ts/explicit-function-return-type': 'off',
+                'ts/method-signature-style': ['error', 'method'],
             },
         })
 
         .override('antfu/jsonc/rules', {
             rules: {
                 'jsonc/indent': ['error', 2],
+                'jsdoc/require-returns-description': 'off',
             },
         })
 
