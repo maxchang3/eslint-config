@@ -31,7 +31,7 @@ export default defineConfig()
     -   Single quotes, no semi
     -   Using [ESLint Stylistic](https://github.com/eslint-stylistic/eslint-stylistic)
 
-## VSCode Config Re
+## VSCode Config Reference
 
 Auto fix on save & use eslint as formatter
 
