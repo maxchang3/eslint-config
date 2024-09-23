@@ -29,6 +29,7 @@ export function maxchang(
             rules: {
                 'curly': 'off',
                 'no-console': 'off',
+                'antfu/top-level-function': 'off',
             },
         })
 
