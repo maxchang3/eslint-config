@@ -1,7 +1,7 @@
 {
   "name": "@maxchang/eslint-config",
   "type": "module",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "packageManager": "pnpm@9.11.0",
   "description": "Max Chang's ESLint config",
   "author": "Max Chang <maxcfoo@gmail.com> (https://github.com/maxchang3/)",
