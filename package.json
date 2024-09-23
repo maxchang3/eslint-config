@@ -28,7 +28,7 @@
     "watch": "tsup --format esm,cjs --watch",
     "lint": "eslint --flag unstable_ts_config .",
     "lint:fix": "eslint --flag unstable_ts_config --fix .",
-    "release": "bumpp && pnpm publish --access public",
+    "release": "bumpp && pnpm build && pnpm publish --access public",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
   },
