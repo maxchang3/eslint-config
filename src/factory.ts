@@ -34,6 +34,7 @@ export function maxchang(
 
         .override('antfu/stylistic/rules', {
             rules: {
+                'curly': 'off',
                 'style/arrow-parens': 'off',
                 'style/max-statements-per-line': 'off',
                 'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
