@@ -54,6 +54,11 @@
     "pcss",
     "postcss"
   ],
+  /**
+   *  https://github.com/antfu/eslint-config/issues/546
+   *  https://github.com/ota-meshi/eslint-plugin-astro/issues/112
+   *  temporary disable and use `Jota0222.multi-formatter` run eslint and astro formatter together
+   */
   "[astro]": {
     "editor.suggest.showKeywords": false,
     "editor.defaultFormatter": "Jota0222.multi-formatter",
@@ -61,5 +66,11 @@
       "astro-build.astro-vscode",
       "dbaeumer.vscode-eslint"
     ]
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   }
 }
