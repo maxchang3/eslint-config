@@ -29,16 +29,13 @@ export function maxchang(
                 'jsdoc/require-returns-description': 'off',
             },
         })
-
-    if (options?.javascript ?? true) {
-        factory = factory.override('antfu/javascript/rules', {
+        .override('antfu/javascript/rules', {
             rules: {
                 'curly': 'off',
                 'no-console': 'off',
                 'antfu/top-level-function': 'off',
             },
         })
-    }
 
     if (options?.typescript ?? true) {
         factory = factory.override('antfu/typescript/rules', {
