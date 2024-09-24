@@ -23,17 +23,34 @@ export function maxchang(
 ): ReturnType<typeof antfu> {
     const withDefaults = { ...defaultOptions, ...options }
 
-    const factory = antfu(withDefaults, ...userConfigs)
+    let factory = antfu(withDefaults, ...userConfigs)
+        .override('antfu/jsdoc/rules', {
+            rules: {
+                'jsdoc/require-returns-description': 'off',
+            },
+        })
 
-        .override('antfu/javascript/rules', {
+    if (options?.javascript ?? true) {
+        factory = factory.override('antfu/javascript/rules', {
             rules: {
                 'curly': 'off',
                 'no-console': 'off',
                 'antfu/top-level-function': 'off',
             },
         })
+    }
 
-        .override('antfu/stylistic/rules', {
+    if (options?.typescript ?? true) {
+        factory = factory.override('antfu/typescript/rules', {
+            rules: {
+                'ts/explicit-function-return-type': 'off',
+                'ts/method-signature-style': ['error', 'method'],
+            },
+        })
+    }
+
+    if (options?.stylistic ?? true) {
+        factory = factory.override('antfu/stylistic/rules', {
             rules: {
                 'curly': 'off',
                 'style/arrow-parens': 'off',
@@ -41,25 +58,15 @@ export function maxchang(
                 'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
             },
         })
+    }
 
-        .override('antfu/typescript/rules', {
-            rules: {
-                'ts/explicit-function-return-type': 'off',
-                'ts/method-signature-style': ['error', 'method'],
-            },
-        })
-
-        .override('antfu/jsonc/rules', {
+    if (options?.jsonc ?? true) {
+        factory = factory.override('antfu/jsonc/rules', {
             rules: {
                 'jsonc/indent': ['error', 2],
             },
         })
-
-        .override('antfu/jsdoc/rules', {
-            rules: {
-                'jsdoc/require-returns-description': 'off',
-            },
-        })
+    }
 
     return factory
 }
