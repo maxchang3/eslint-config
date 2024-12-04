@@ -23,13 +23,13 @@ export default defineConfig()
 
 ## Convention
 
--   Base on `@antfu/eslint-config`
--   Auto fix for formatting, enable fomatters by default（HTML, CSS, Markdown）.
--   Style principle: Minimal for reading, stable for diff, consistent
-    -   **4 spaces for indentation (except for JSON)**
-    -   Sorted imports, dangling commas
-    -   Single quotes, no semi
-    -   Using [ESLint Stylistic](https://github.com/eslint-stylistic/eslint-stylistic)
+- Base on `@antfu/eslint-config`
+- Auto fix for formatting, enable fomatters by default（HTML, CSS, Markdown）.
+- Style principle: Minimal for reading, stable for diff, consistent
+    - **4 spaces for indentation (except for JSON)**
+    - Sorted imports, dangling commas
+    - Single quotes, no semi
+    - Using [ESLint Stylistic](https://github.com/eslint-stylistic/eslint-stylistic)
 
 ## VSCode Config Reference
 
