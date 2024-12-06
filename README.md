@@ -2,9 +2,9 @@
 
 [![npm](https://img.shields.io/npm/v/@maxchang/eslint-config?color=444)](https://npmjs.com/package/@maxchang/eslint-config)
 
-Max Chang's ESLint config preset, just a personalized version of [@antfu/eslint-config](https://github.com/antfu/eslint-config), for personal use.
+Max Chang's ESLint config preset, is just a personalized version of [@antfu/eslint-config](https://github.com/antfu/eslint-config), for personal use.
 
-See usage and more details in [@antfu/eslint-config](https://github.com/antfu/eslint-config).
+See usage and details in [@antfu/eslint-config](https://github.com/antfu/eslint-config).
 
 ## Usage
 
@@ -12,7 +12,7 @@ See usage and more details in [@antfu/eslint-config](https://github.com/antfu/es
 pnpm i -D eslint @maxchang/eslint-config
 ```
 
-Create eslint.config.mjs in your project root:
+Create `eslint.config.mjs` in your project root:
 
 ```js
 // eslint.config.mjs
@@ -23,8 +23,8 @@ export default defineConfig()
 
 ## Convention
 
-- Base on `@antfu/eslint-config`
-- Auto fix for formatting, enable fomatters by default（HTML, CSS, Markdown）.
+- Based on `@antfu/eslint-config`
+- Auto fix for formatting, enable formatters by default（HTML, CSS, Markdown）.
 - Style principle: Minimal for reading, stable for diff, consistent
     - **4 spaces for indentation (except for JSON)**
     - Sorted imports, dangling commas
