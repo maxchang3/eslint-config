@@ -26,8 +26,8 @@
     "stub": "tsup --format esm",
     "dev": "pnpx @eslint/config-inspector --config eslint.config.ts",
     "watch": "tsup --format esm,cjs --watch",
-    "lint": "eslint --flag unstable_ts_config .",
-    "lint:fix": "eslint --flag unstable_ts_config --fix .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "release": "bumpp && pnpm build && pnpm publish --access public",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
