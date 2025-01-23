@@ -14,7 +14,7 @@ importers:
     devDependencies:
       '@types/node':
         specifier: ^22.5.5
-        version: 22.9.2
+        version: 22.10.10
       bumpp:
         specifier: ^9.5.2
         version: 9.9.0
@@ -35,7 +35,7 @@ importers:
         version: 2.11.1
       tsup:
         specifier: ^8.3.0
-        version: 8.3.5(jiti@2.4.2)(postcss@8.4.49)(typescript@5.7.3)(yaml@2.6.1)
+        version: 8.3.5(jiti@2.4.2)(postcss@8.5.1)(typescript@5.7.3)(yaml@2.6.1)
       typescript:
         specifier: ^5.6.2
         version: 5.7.3
@@ -498,8 +498,8 @@ packages:
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
 
-  '@types/node@22.9.2':
-    resolution: {integrity: sha512-wwuxAVEbsRvDD9x7buvAl7DyQ7Oj+va/d/Veug7higYzp9MF0CINbfWTBgDFMpcVwcdUiYuNmX2KfnvY3N70mw==}
+  '@types/node@22.10.10':
+    resolution: {integrity: sha512-X47y/mPNzxviAGY5TcYPtYL8JsY3kAq2n8fMmKoRCxq/c4v4pyGNCzM2R6+M5/umG4ZfHuT+sgqDYqWc9rJ6ww==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -1742,8 +1742,8 @@ packages:
     resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
     engines: {node: '>=4'}
 
-  postcss@8.4.49:
-    resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
+  postcss@8.5.1:
+    resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -2057,8 +2057,8 @@ packages:
   ufo@1.5.4:
     resolution: {integrity: sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==}
 
-  undici-types@6.19.8:
-    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+  undici-types@6.20.0:
+    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
 
   unist-util-is@6.0.0:
     resolution: {integrity: sha512-2qCTHimwdxLfz+YzdGfkqNlH0tLi9xjTnHddPmJwtIG9MGsdbutfTc4P+haPD7l7Cjxf/WZj+we5qfVPvvxfYw==}
@@ -2523,9 +2523,9 @@ snapshots:
 
   '@types/ms@0.7.34': {}
 
-  '@types/node@22.9.2':
+  '@types/node@22.10.10':
     dependencies:
-      undici-types: 6.19.8
+      undici-types: 6.20.0
 
   '@types/normalize-package-data@2.4.4': {}
 
@@ -2637,7 +2637,7 @@ snapshots:
       '@vue/shared': 3.5.1
       estree-walker: 2.0.2
       magic-string: 0.30.17
-      postcss: 8.4.49
+      postcss: 8.5.1
       source-map-js: 1.2.1
 
   '@vue/compiler-ssr@3.5.1':
@@ -3993,12 +3993,12 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  postcss-load-config@6.0.1(jiti@2.4.2)(postcss@8.4.49)(yaml@2.6.1):
+  postcss-load-config@6.0.1(jiti@2.4.2)(postcss@8.5.1)(yaml@2.6.1):
     dependencies:
       lilconfig: 3.1.2
     optionalDependencies:
       jiti: 2.4.2
-      postcss: 8.4.49
+      postcss: 8.5.1
       yaml: 2.6.1
 
   postcss-selector-parser@6.1.2:
@@ -4006,7 +4006,7 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss@8.4.49:
+  postcss@8.5.1:
     dependencies:
       nanoid: 3.3.8
       picocolors: 1.1.1
@@ -4283,7 +4283,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsup@8.3.5(jiti@2.4.2)(postcss@8.4.49)(typescript@5.7.3)(yaml@2.6.1):
+  tsup@8.3.5(jiti@2.4.2)(postcss@8.5.1)(typescript@5.7.3)(yaml@2.6.1):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.24.0)
       cac: 6.7.14
@@ -4293,7 +4293,7 @@ snapshots:
       esbuild: 0.24.0
       joycon: 3.1.1
       picocolors: 1.1.1
-      postcss-load-config: 6.0.1(jiti@2.4.2)(postcss@8.4.49)(yaml@2.6.1)
+      postcss-load-config: 6.0.1(jiti@2.4.2)(postcss@8.5.1)(yaml@2.6.1)
       resolve-from: 5.0.0
       rollup: 4.24.0
       source-map: 0.8.0-beta.0
@@ -4302,7 +4302,7 @@ snapshots:
       tinyglobby: 0.2.10
       tree-kill: 1.2.2
     optionalDependencies:
-      postcss: 8.4.49
+      postcss: 8.5.1
       typescript: 5.7.3
     transitivePeerDependencies:
       - jiti
@@ -4324,7 +4324,7 @@ snapshots:
 
   ufo@1.5.4: {}
 
-  undici-types@6.19.8: {}
+  undici-types@6.20.0: {}
 
   unist-util-is@6.0.0:
     dependencies:
