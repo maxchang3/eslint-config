@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.5.5",
-    "bumpp": "^9.5.2",
+    "bumpp": "^10.0.0",
     "eslint": "^9.11.0",
     "eslint-plugin-format": "^1.0.0",
     "jiti": "^2.0.0",
