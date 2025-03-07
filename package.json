@@ -33,20 +33,22 @@
     "prepare": "simple-git-hooks"
   },
   "peerDependencies": {
-    "eslint": "^9.11.0"
+    "eslint": "^9.11.0",
+    "eslint-plugin-format": ">=0.1.0"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^4.0.0"
+    "@antfu/eslint-config": "^4.6.0",
+    "local-pkg": "^1.1.1"
   },
   "devDependencies": {
-    "@types/node": "^22.5.5",
-    "bumpp": "^10.0.0",
-    "eslint-plugin-format": "^1.0.0",
-    "jiti": "^2.0.0",
-    "lint-staged": "^15.2.10",
+    "@types/node": "^22.13.9",
+    "bumpp": "^10.0.3",
+    "eslint-plugin-format": "^1.0.1",
+    "jiti": "^2.4.2",
+    "lint-staged": "^15.4.3",
     "simple-git-hooks": "^2.11.1",
-    "tsup": "^8.3.0",
-    "typescript": "^5.6.2"
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpx lint-staged"
