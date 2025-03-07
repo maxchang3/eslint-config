@@ -1,11 +1,21 @@
 import antfu from '@antfu/eslint-config'
+import { isPackageExists } from 'local-pkg'
 
 type Options = Parameters<typeof antfu>[0]
 type UserConfigs = Parameters<typeof antfu>[1][]
 
+const VuePackages = [
+    'vue',
+    'nuxt',
+    'vitepress',
+    '@slidev/cli',
+]
+
 const defaultOptions: Options = {
     yaml: false,
     markdown: true,
+    typescript: isPackageExists('typescript'),
+    vue: VuePackages.some(i => isPackageExists(i)),
     stylistic: {
         indent: 4,
     },
