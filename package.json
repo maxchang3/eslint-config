@@ -32,13 +32,15 @@
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
   },
+  "peerDependencies": {
+    "eslint": "^9.11.0"
+  },
   "dependencies": {
     "@antfu/eslint-config": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.5.5",
     "bumpp": "^10.0.0",
-    "eslint": "^9.11.0",
     "eslint-plugin-format": "^1.0.0",
     "jiti": "^2.0.0",
     "lint-staged": "^15.2.10",
